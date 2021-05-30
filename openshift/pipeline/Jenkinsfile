@@ -1,6 +1,6 @@
 node('tools') {
   stage 'build'
-  openshiftBuild(buildConfig: 'tools-ex', showBuildLogs: 'true')
+  openshiftBuild(buildConfig: 'tools', showBuildLogs: 'true')
   stage 'deploy'
-  openshiftDeploy(deploymentConfig: 'tools-ex')
+  openshiftDeploy(deploymentConfig: 'tools')
 }
